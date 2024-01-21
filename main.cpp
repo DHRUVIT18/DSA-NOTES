@@ -60,7 +60,10 @@ bool check(vector<int>t,vector<int>v){
   return true;
 }
 
-
+bool sortcol(const vector<int>& v1, const vector<int>& v2)
+{
+    return v1[1] < v2[1];
+}
 
 void solve(){
  
@@ -78,13 +81,13 @@ int32_t main()
     cin.tie(NULL);
     cout.tie(NULL);
 
-// int t;
-// cin>>t;
-// while(t--){
-// solve();
-
-//  }
+int t;
+cin>>t;
+while(t--){
 solve();
+
+ }
+// solve();
 
 
 return 0;
