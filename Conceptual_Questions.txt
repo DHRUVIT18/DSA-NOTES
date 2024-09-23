@@ -88,52 +88,11 @@ What are dynamic data structures?
 Dynamic data structures have the feature where they expand and contract as a program runs. It provides a very flexible method of data manipulation because adjusts based on the size of the data to be manipulated.
 These 20 coding interview questions that test the conceptual understanding of the candidates give the interview a clear idea on how strong the candidate’s fundamentals are
 Programming Interview Questions
+
 The next set of coding interview questions focus tests the programming expertise of the candidates and dives deep into various related aspects.
+
 The code screenshots given along with the below coding interview questions helps you provide the answer to the question, with clarity.
 
-How do you reverse a string in Java?
-• Declare a string.
-• Take out the length of that string.
-• Loop through the characters of the string.
-• Add the characters in reverse order in the new string.
-String str = "hello";
-
-String reverse = "";
-
-int length = str.length();
-
-for (int i = 0; i < length; i++) {
-
- reverse = str.charAt(i) + reverse;
-}
-
-System.out.println(reverse);
-22. How do you determine if a string is a palindrome?
-• A string is a palindrome when it stays the same on reversing the order of characters in that string.
-• It can be achieved by reversing the original string first and then checking if the reversed string is equal to the original string.
-if (str.equals(reverse)) {
-
-System.out.println("Palindrome");
-} else {
-
-System.out.println("Not Palindrome");
-}
-23. Find the number of occurrences of a character in a String?
-To find the number of occurrences, loop through the string and search for that character at every iteration; whenever it is found, it will update the count.
-int count = 0;
-
-char search = 'a';
-
-for (int i = 0; i < length; i++) {
-
-if (str.charAt(i) == search) {
-
-    count++;
-
-}
-}
-
-System.out.println(count);
 24. How to find out if the given two strings are anagrams or not?
 Two strings are anagrams if they contain a similar group of characters in a varied sequence.
 • Declare a boolean variable that tells at the end of the two strings are anagrams or not.
@@ -155,6 +114,7 @@ System.out.println(" anagrams string");
 } else {
 System.out.println(" not anagrams string");
 }
+
 25. How do you calculate the number of vowels and consonants in a String?
 • Loop through the string.
 • Increase the vowel variable by one whenever the character is found to be a vowel, using the if condition. Otherwise, increment the consonant variable.
@@ -170,6 +130,7 @@ consonants++;
 }
 System.out.println("Vowel count is " + vowels);
 System.out.println("Consonant count is: " + consonants);
+
 26. How do you get the matching elements in an integer array?
 • Declare an array.
 • Nest a couple of loops to compare the numbers with other numbers in the array.
@@ -181,6 +142,7 @@ if (a[m] == a[n])
 System.out.print(a[m]);
 }
 }
+
 27. How would you implement the bubble sort algorithm?
 • Declare an array.
 • Nest a couple of loops to compare the numbers in the array.
@@ -207,7 +169,7 @@ a[n - 1] = k;
 n--;
 }
 }
-29. How do you reverse an array?
+29. How do you reverse an array? 
 • Loop till the half-length of the array.
 • Replace the numbers corresponding to the indexes from the starting and the end.
 int[] a = { 1, 2, 7, 6, 4, 9, 12 };
@@ -216,6 +178,7 @@ int tmp = a[t];
 a[t] = a[a.length - t - 1];
 a[a.length - t- 1] = tmp;
 }
+
 30. How would you swap two numbers without using a third variable?
 • Declare two variables and initialize them with values.
 • Make b the sum of both numbers.
@@ -226,6 +189,7 @@ int b = 20;
 b = b + a; // now b is sum of both the numbers
 a = b - a; // b - a = (b + a) - a = b (a is swapped)
 b = b - a; // (b + a) - b = a (b is swapped)
+
 31. Print a Fibonacci series using recursion?
 • The Fibonacci numbers are the numbers in the following integer sequence:
 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, ……..
@@ -239,6 +203,7 @@ public static void main(String args[]) {
 int n = 10;
 System.out.println(fibonacci(n));
 }
+
 32. How do you find the factorial of an integer?
 • A factorial is a function that multiplies a number by every number below it. For example, 5!= 54321=120.
 • Recursive function multiples the numbers until it reaches 1.
@@ -248,6 +213,7 @@ return 1;
 else
 return (n * factorial(n - 1));
 }
+
 33. How do you reverse a Linked List?
 • Declare a linked list.
 • Add elements to that linked list.
@@ -261,6 +227,7 @@ System.out.println(ll);
 LinkedList ll1 = new LinkedList<>();
 ll.descendingIterator().forEachRemaining(ll1::add);
 System.out.println(ll1);
+
 34. How would you implement Binary Search?
 • Binary search divides the array into half in every iteration step until it finds the element.
 • It works on the sorted arrays since it compares the values of adjacent elements and then calculates the mid number.
@@ -280,6 +247,7 @@ if (low > high) {
 return -1;
 }
 return -1;
+
 35. How would you find the second largest number in an array?
 • Loop through the array.
 • If the value of i is greater than the highest, store the value of i in highest, and store the value of highest in the second-highest variable.
@@ -296,11 +264,13 @@ secondHighest = i;
 }
 return secondHighest;
 }
+
 36. How do you remove all occurrences of a given character from the input string?
 • Use the built-in string method “replace” to replace a character with any other character, including symbols and white spaces.
 String str1 = "Australia";
 str1 = str1.replace("a", "");
 System.out.println(str1); // ustrli
+
 37. Showcase Inheritance with the help of a program?
 • The class Cat inherits the property color from the class Animal by extending the parent class (Animal).
 • This way a class Cat can have more parent classes if it wishes to inherit their properties.
@@ -312,6 +282,7 @@ void meow() {
 System.out.println("Meow");
 }
 }
+
 38. Explain overloading and overriding with the help of a program?
 Overloading:
 When a class has two or more methods with the same name, they are called overloaded methods.
@@ -339,6 +310,7 @@ void printName() {
 System.out.println("Child Class");
 }
 }
+
 39. How do you check if the given number is prime?
 • Use if statements to check for each condition separately:
 • If the number is 0 or 1, it cannot be prime.
@@ -358,6 +330,7 @@ return false;
 }
 return true;
 }
+
 40. How do you sum all the elements in an array?
 • Use for loop to iterate through the array and keep adding the elements in that array.
 int[] array = { 1, 2, 3, 4, 5 };
