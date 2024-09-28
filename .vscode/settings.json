@@ -1,9 +1,16 @@
 {
     "files.associations": {
+        " *.css": "",
         "*.ejs": "html",
         "xstring": "cpp",
         "vector": "cpp",
-        "unordered_set": "cpp"
+        "unordered_set": "cpp",
+        "array": "cpp",
+        "bitset": "cpp",
+        "initializer_list": "cpp",
+        "regex": "cpp",
+        "utility": "cpp",
+        "valarray": "cpp"
     },
     "C_Cpp.errorSquiggles": "Disabled"
 }
